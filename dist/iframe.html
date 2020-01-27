@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframe</title>
+    <style>
+        body {
+            padding: 20px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div>Frame page</div>
+    <div>
+        <button onclick="$(this).next().toggle();">toggle size</button>
+        <div style="display: none">
+            some large content<br />
+            some large content<br />
+            some large content<br />
+            some large content<br />
+            some large content<br />
+            some large content<br />
+            some large content<br />
+            some large content<br />
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="iframe-resize.bundle.js"></script></body>
+</html>
