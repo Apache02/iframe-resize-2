@@ -9,6 +9,13 @@
             margin: 0;
             box-sizing: border-box;
         }
+        .checkbox_display {
+            display: none;
+        }
+
+        input:checked ~ .checkbox_display {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -29,9 +36,25 @@
         </div>
     </div>
 
+    <div>
+        <input type="checkbox" id="cb">
+        <label for="cb">toggle checkbox</label>
+        <div class="checkbox_display">
+            some large content<br />
+            some large content<br />
+            some large content<br />
+            some large content<br />
+            some large content<br />
+            some large content<br />
+            some large content<br />
+            some large content<br />
+        </div>
+    </div>
+
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="iframe-resize.bundle.js"></script>
 
 <script type="text/javascript" src="iframe-resize.bundle.js"></script></body>
 </html>
